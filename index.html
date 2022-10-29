@@ -44,12 +44,53 @@
           opacity: 1;
           right: 0;
         }
+
+
+
+
+
+        .button {
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
         </style>
 </head>
 <body>
     <h1>PLEASE ADD 5 TYPES OF BUTTONS</h1>
     <h2> Button no 1</h2>
     <button class="button"><span>Hover </span></button>
-    
+    <button class="button"><span>Button No 2
+         </span></button>
 </body>
 </html>
